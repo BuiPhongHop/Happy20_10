@@ -1,6 +1,10 @@
 import html
 import streamlit as st
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
 # ============================================================
 # CẤU HÌNH: Bạn chỉ cần sửa ảnh và link ở khu vực này
 # ============================================================
