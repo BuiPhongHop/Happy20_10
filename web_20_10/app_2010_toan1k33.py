@@ -13,14 +13,16 @@ LINK_KHONG = "https://tinyurl.com/OpenMeForHappy"
 # Thay các giá trị None bằng đường dẫn ảnh, ví dụ: "images/loan.jpg"
 # Bạn cũng có thể dùng URL ảnh công khai.
 
+BASE_DIR = Path(__file__).resolve().parent
+
 ANH = {
-    "Ngô Châu Loan": "images/Loan.jpg",       # anh1
-    "Lê Xuân Bích Thảo": "images/Thao.jpg",   # anh2
-    "Trần Thị Thịnh": "images/Thinh.jpg",    # anh3
-    "Nguyễn Thị Ý Thơ": "images/Tho.jpg",    # anh4
-    "Ngô Thị Ngọc Minh": "images/Minh.jpg",  # anh5
-    "Bùi Hồng Tài": "images/Tai.jpg",        # anh6
-    "Huỳnh Phạm Phương Uyên": "images/Uyen.jpg", # anh7
+    "Ngô Châu Loan": str(BASE_DIR / "images" / "Loan.jpg"),
+    "Lê Xuân Bích Thảo": str(BASE_DIR / "images" / "Thao.jpg"),
+    "Trần Thị Thịnh": str(BASE_DIR / "images" / "Thinh.jpg"),
+    "Nguyễn Thị Ý Thơ": str(BASE_DIR / "images" / "Tho.jpg"),
+    "Ngô Thị Ngọc Minh": str(BASE_DIR / "images" / "Minh.jpg"),
+    "Bùi Hồng Tài": str(BASE_DIR / "images" / "Tai.jpg"),
+    "Huỳnh Phạm Phương Uyên": str(BASE_DIR / "images" / "Uyen.jpg"),
 }
 
 
